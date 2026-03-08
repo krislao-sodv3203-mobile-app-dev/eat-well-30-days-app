@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EatWellApp</string>
+    <string name="recipe1_title">Hearty Chickpea &amp; Spinach Stew Hearty</string>
+    <string name="recipe1_description">This satisfying stew comes together in a snap. Mashed chickpeas add body to the broth, and tomato paste adds a savory note without adding too much sodium to this healthy recipe for weight loss.</string>
+    <string name="recipe1_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
+    <string name="expand_button_content_description">See more or less recipe details</string>
 </resources>
