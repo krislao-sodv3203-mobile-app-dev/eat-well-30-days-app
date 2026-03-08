@@ -6,42 +6,62 @@
 
     <string name="recipe1_title">Hearty Chickpea &amp; Spinach Stew</string>
     <string name="recipe1_description">This satisfying stew comes together in a snap. Mashed chickpeas add body to the broth, and tomato paste adds a savory note without adding too much sodium to this healthy recipe for weight loss.</string>
-    <string name="recipe1_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe2_title">Salmon Caesar Salad</string>
     <string name="recipe2_description">This easy Caesar salad subs creamy Greek yogurt and buttermilk for the traditional egg yolks and olive oil and mixes in mildly bitter radicchio in addition to classic romaine. Using just a small amount of flavorful Parmigiano-Reggiano shaves calories and sodium too.</string>
-    <string name="recipe2_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe3_title">Black Bean Salad with Grilled Pork Cutlets</string>
     <string name="recipe3_description">This hearty bean salad is packed with vibrant colors and contrasting textures. Center-cut boneless pork chops—also called pork cutlets—make a convenient and economical protein to round out the meal. This recipe makes one extra cutlet, which can be refrigerated for another use.</string>
-    <string name="recipe3_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe4_title">Roasted Salmon Caprese</string>
     <string name="recipe4_description">This oven-ready recipe is a snap to prep. Salmon fillets and cherry tomatoes roast side by side on one pan, then they are drizzled with balsamic glaze to pull it all together.</string>
-    <string name="recipe4_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe5_title">Ginger-Dill Salmon with Cucumber &amp; Avocado Salad</string>
     <string name="recipe5_description">This ginger-dill salmon with cucumber and avocado salad is a light, refreshing meal that doesn’t skimp on flavor. Tender, flaky salmon is infused with the unique combination of warm ginger and fresh dill, making it the perfect complement to the cool, creamy salad.</string>
-    <string name="recipe5_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe6_title">Zucchini, Corn &amp; Egg Casserole</string>
     <string name="recipe6_description">This healthy casserole is essentially a crustless quiche brimming with fresh summer vegetables. Bake it up for an elegant summer brunch or a casual backyard barbecue.</string>
-    <string name="recipe6_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe7_title">Chicken with Spinach &amp; Tomato Orzo Salad</string>
     <string name="recipe7_description">Baked chicken breasts cook in the oven while you mix together a Mediterranean-inspired salad—packed with veggies, whole-wheat orzo and an easy homemade vinaigrette—for a weekend-worthy dinner on the table in under an hour. The leftovers from this healthy 400-calorie meal make a delicious packable lunch for the next day.</string>
-    <string name="recipe7_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe8_title">Salmon-Stuffed Avocados</string>
     <string name="recipe8_description">Canned salmon is a valuable pantry staple and a practical way to include heart-healthy omega-3-rich fish in your diet. Here, we combine it with avocados in an easy no-cook meal.</string>
-    <string name="recipe8_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe9_title">Baked Falafel Sandwiches</string>
     <string name="recipe9_description">This street-style falafel sandwich is herbaceous, tangy and rich. The falafel gets nice and crispy in the oven, while the veggies inside keep it simple and fresh. Make the tahini sauce ahead of time for easy prep. Wrapping the sandwich in foil makes it a perfect bring-along lunch and helps hold it together for eating on the go.</string>
-    <string name="recipe9_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
     <string name="recipe10_title">Chicken &amp; Kale Soup</string>
     <string name="recipe10_description">This easy chicken and kale soup will keep you warm on a cold and rainy day—or any day that calls for a simple, hearty soup. For convenience, you can make this soup from frozen kale without the need to thaw it beforehand.</string>
-    <string name="recipe10_link">https://www.eatingwell.com/recipe/270568/hearty-chickpea-spinach-stew/</string>
-
+    <string name="recipe11_title">Spinach &amp; Feta-Stuffed Portobello Mushrooms</string>
+    <string name="recipe11_description">These stuffed portobello mushrooms have a filling inspired by the Greek spinach pie, spanakopita. To keep them quick, we ditched the phyllo, so they\'re great for an easy weeknight vegetarian dinner.</string>
+    <string name="recipe12_title">Chicken, Avocado &amp; Quinoa Bowls with Herb Dressing</string>
+    <string name="recipe12_description">Arrange the toppings individually on these protein-packed grain bowls so each bite has a contrasting taste and texture. Make big batches of the salad dressing, quinoa and roasted chicken thighs, and you\'ll have healthy meal-prep lunches or dinners for days. Though the chicken thighs take just 15 minutes to prep, you can also make the salads with leftover chicken or store-bought cooked chicken to make prep even faster.</string>
+    <string name="recipe13_title">Sheet-Pan Chili-Lime Salmon with Potatoes &amp; Peppers</string>
+    <string name="recipe13_description">Busy weeknights beg for something simple like this salmon sheet-pan dinner. As the name suggests, it\'s all cooked on one pan. The potatoes get a head start, followed by sweet bell peppers and finally chili-coated salmon fillets. It\'s a complete meal with easy cleanup!</string>
+    <string name="recipe14_title">Kale &amp; Avocado Salad with Blueberries &amp; Edamame</string>
+    <string name="recipe14_description">Bursting with nutrient-rich produce, this California-inspired salad is a delicious and satisfying way to get your vitamins. We love the unique combination of blueberries, edamame and goat cheese.</string>
+    <string name="recipe15_title">Zucchini Lasagna Rolls</string>
+    <string name="recipe15_description">Give lasagna rolls a healthy low-carb makeover with this easy recipe, which subs in thinly sliced zucchini for lasagna noodles. Finish off this cheesy vegetarian casserole with a crispy breadcrumb topping made from almonds to keep it gluten-free.</string>
+    <string name="recipe16_title">Shrimp-&amp;-Grits-Stuffed Peppers</string>
+    <string name="recipe16_description">Shrimp and grits are stuffed inside bell peppers and baked in this healthy stuffed peppers recipe. Add the optional hot sauce if you want to give the filling some kick. Look for bell peppers—use any color—with even bottoms so that they stand upright on their own when they\'re cooked.</string>
+    <string name="recipe17_title">Summer Skillet Vegetable &amp; Egg Scramble</string>
+    <string name="recipe17_description">Don\'t toss out those almost-past-their-prime vegetables and fresh herbs. Toss them into this skillet egg scramble for a quick vegetarian meal. Nearly any vegetable will work in this easy skillet recipe, so choose your favorites or use what you have on hand.</string>
+    <string name="recipe18_title">Spinach &amp; Herb Turkey Burgers with Portobello "Buns"</string>
+    <string name="recipe18_description">This low-carb burger replaces the typical bun with roasted portobello mushroom caps. Creamy tzatziki and crisp sliced red onion add texture and flavor to this easy Greek-inspired burger recipe.</string>
+    <string name="recipe19_title">Tofu &amp; Vegetable Curry with Zucchini Noodles</string>
+    <string name="recipe19_description">For this quick Thai-inspired curry recipe, we\'ve combined tofu and plenty of veggies with a flavorful sauce made with red curry paste, lime juice and coconut milk. Serve the curry over lightly warmed zucchini noodles to get even more veggies in your weeknight dinner. Bonus: Everything is cooked in one skillet, so there\'s only one pan to wash after dinner.</string>
+    <string name="recipe20_title">Chopped Cobb Salad with Chicken</string>
+    <string name="recipe20_description">This healthy chopped salad is a great way to use up leftover cooked chicken. You can reserve the remaining hard-boiled egg half for a snack.</string>
+    <string name="recipe21_title">Vegetarian Slow-Cooker Pozole</string>
+    <string name="recipe21_description">This healthy vegetarian take on the Mexican stew pozole gets tons of flavor from poblano peppers, ancho chile powder and dried herbs and spices, while cannellini beans provide protein and fiber.</string>
+    <string name="recipe22_title">Herbed Tomato Gratin</string>
+    <string name="recipe22_description">Vegetable gratin recipes often have a crunchy breadcrumb or crouton topping. But summer tomatoes are too gorgeous to hide, so we tucked crusty cubes of bread underneath them instead. Plus, the bread soaks up all the juicy tomato goodness. Fresh basil or oregano make good substitutes if you can\'t find marjoram for this recipe.</string>
+    <string name="recipe23_title">One-Skillet Garlicky Salmon &amp; Broccoli</string>
+    <string name="recipe23_description">This one-skillet salmon and broccoli recipe is the perfect 20-minute dinner for busy weeknights! This dish combines tender, flaky salmon with crisp, garlicky broccoli and bell pepper, all cooked in one pan for easy prep and cleanup. Packed with lean protein, omega-3s and a generous serving of veggies, this is one recipe you’ll want on repeat!</string>
+    <string name="recipe24_title">Basil Pesto Pasta with Grilled Vegetables</string>
+    <string name="recipe24_description">This dish is an easy way to turn grilled vegetables into a satisfying meal, thanks to hearty whole-grain pasta and a quick homemade pesto.</string>
+    <string name="recipe25_title">Sheet-Pan Roasted Salmon &amp; Vegetables</string>
+    <string name="recipe25_description">This dish is packed with flavor and nutrients and fits perfectly into a Mediterranean diet.</string>
+    <string name="recipe26_title">Cheesy Spinach-&amp;-Artichoke-Stuffed Spaghetti Squash</string>
+    <string name="recipe26_description">This spaghetti-squash-for-pasta swap slashes both carbs and calories by 75% for a delicious, creamy casserole you can feel good about eating. It\'s worth roasting the squash versus cooking it in the microwave if you have the time—the flavor gets sweeter and more intense.</string>
+    <string name="recipe27_title">Lemony Lentil Soup with Collards</string>
+    <string name="recipe27_description">You don\'t need broth for this lentil soup recipe—it\'s rich thanks to the browned bits in the bottom of the pan that meld into the soup, packing it with flavor. Ground coriander, from the seed of the cilantro plant, has a floral, citrusy flavor that dovetails nicely with the lemon.</string>
+    <string name="recipe28_title">Salmon &amp; Avocado Salad</string>
+    <string name="recipe28_description">Tender salmon tops a hearty salad of red cabbage, carrots and avocados tossed with a creamy dill vinaigrette in this quick, easy dinner.</string>
+    <string name="recipe29_title">Beef &amp; Bean Chile Verde</string>
+    <string name="recipe29_description">Chile verde, usually a slow-cooked stew of pork, jalapeños and tomatillos, becomes an easy weeknight meal with quick-cooking ground beef and store-bought green salsa. Make it a meal by serving it with fresh cilantro, red onion and Monterey Jack. Add cornbread on the side and your favorite hot sauce.</string>
+    <string name="recipe30_title">Lemon &amp; Turmeric Chicken Soup</string>
+    <string name="recipe30_description">This lemon and turmeric chicken soup is comforting and packed with protein. Turmeric, which is known for its anti-inflammatory properties, gives the soup its vibrant yellow hue. It’s the perfect meal for when you’re sick or simply warming up on a chilly day. We love tender-crisp baby kale, but chopped kale or baby spinach can be used in its place.</string>
 </resources>

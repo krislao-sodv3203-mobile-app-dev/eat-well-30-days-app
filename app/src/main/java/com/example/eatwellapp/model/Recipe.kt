@@ -7,5 +7,4 @@ data class Recipe(
     @DrawableRes val image: Int,
     @StringRes val title: Int,
     @StringRes val description: Int,
-    @StringRes val externalLink: Int
 )

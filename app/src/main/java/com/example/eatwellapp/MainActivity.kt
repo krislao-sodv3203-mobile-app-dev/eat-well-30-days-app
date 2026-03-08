@@ -180,7 +180,6 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
                 )
             }
         }
-        // TODO: Recipe external link button
     }
 }
 
@@ -219,7 +218,6 @@ fun RecipeCardPreview() {
                 image = R.drawable.recipe1_image,
                 title = R.string.recipe1_title,
                 description = R.string.recipe1_description,
-                externalLink = R.string.recipe1_link
             )
         )
     }
