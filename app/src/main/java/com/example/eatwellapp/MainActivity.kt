@@ -54,6 +54,13 @@ import com.example.eatwellapp.model.Recipe
 import com.example.eatwellapp.ui.theme.EatWellAppTheme
 
 
+/***************************
+ * Author: Marion Kristoffer Lao
+ * Student ID: 474412
+ * Date: March 08, 2026
+ * Course: SODV3203 Mobile App Development
+ * Assignment 03: EatWellApp - A 30 Days App
+ ****************************/
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
