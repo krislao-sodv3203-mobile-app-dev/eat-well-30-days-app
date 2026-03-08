@@ -117,7 +117,7 @@ fun EatWellTopBar(modifier: Modifier = Modifier) {
         HorizontalDivider(
             thickness = 1.dp,
             color = MaterialTheme.colorScheme.secondary,
-            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.space_small))
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.space_medium))
         )
     }
 }
