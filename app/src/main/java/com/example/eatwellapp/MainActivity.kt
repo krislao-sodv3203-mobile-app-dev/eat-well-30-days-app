@@ -4,11 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -21,6 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -105,9 +108,13 @@ fun EatWellTopBar(modifier: Modifier = Modifier) {
 @Composable
 fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
     var expanded by remember { mutableStateOf(false) }
-
+    val color by animateColorAsState(
+        targetValue = if (expanded) MaterialTheme.colorScheme.secondaryContainer
+        else MaterialTheme.colorScheme.primaryContainer,
+    )
     Card(
         border = BorderStroke(1.dp, Color.Gray),
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         modifier = modifier
     ) {
         Column(
@@ -118,6 +125,7 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
                         stiffness = Spring.StiffnessMedium
                     )
                 )
+                .background(color = color)
                 .clickable { expanded = !expanded }
         ) {
             Image(
@@ -135,6 +143,7 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
             ) {
                 Text(
                     text = stringResource(recipe.title),
+                    style = MaterialTheme.typography.displayMedium,
                     modifier = Modifier.weight(1f)
                 )
                 RecipeCardToggleButton(
@@ -145,10 +154,11 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
             if (expanded) {
                 Text(
                     text = stringResource(recipe.description),
+                    style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier.padding(
                         start = dimensionResource(R.dimen.padding_medium),
                         end = dimensionResource(R.dimen.padding_medium),
-                        bottom = dimensionResource(R.dimen.padding_medium)
+                        bottom = dimensionResource(R.dimen.padding_large)
                     )
                 )
             }
