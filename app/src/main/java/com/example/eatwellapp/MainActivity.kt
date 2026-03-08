@@ -21,8 +21,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material3.Card
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -49,20 +52,54 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EatWellAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    RecipeCard(
-                        Recipe(
-                            image = R.drawable.recipe1_image,
-                            title = R.string.recipe1_title,
-                            description = R.string.recipe1_description,
-                            externalLink = R.string.recipe1_link
-                        ),
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                EatWellApp()
             }
         }
     }
+}
+
+@Composable
+fun EatWellApp() {
+    Scaffold(
+        topBar = { EatWellTopBar() },
+        modifier = Modifier.fillMaxSize()
+    ) { innerPadding ->
+        // TODO: use LazyColumn
+        RecipeCard(
+            Recipe(
+                image = R.drawable.recipe1_image,
+                title = R.string.recipe1_title,
+                description = R.string.recipe1_description,
+                externalLink = R.string.recipe1_link
+            ),
+            modifier = Modifier.padding(innerPadding)
+        )
+    }
+
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun EatWellTopBar(modifier: Modifier = Modifier) {
+    CenterAlignedTopAppBar(
+        title = {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                // TODO: add logo
+//                Image(
+//                    modifier = Modifier
+//                        .size(dimensionResource(id = R.dimen.image_size))
+//                        .padding(dimensionResource(id = R.dimen.padding_small)),
+//                    painter = painterResource(R.drawable.ic_woof_logo),
+//                    contentDescription = null
+//                )
+                Text(
+                    text = stringResource(R.string.app_name),
+                    style = MaterialTheme.typography.displayLarge
+                )
+            }
+        },
+        modifier = modifier,
+    )
 }
 
 @Composable
@@ -135,6 +172,14 @@ fun RecipeCardToggleButton(
             contentDescription = stringResource(R.string.expand_button_content_description),
             modifier = Modifier.size(32.dp)
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun EatWellAppPreview() {
+    EatWellAppTheme {
+        EatWellApp()
     }
 }
 
