@@ -19,6 +19,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
@@ -26,6 +29,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -45,6 +49,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.eatwellapp.data.Datasource
 import com.example.eatwellapp.model.Recipe
 import com.example.eatwellapp.ui.theme.EatWellAppTheme
 
@@ -62,47 +67,59 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun EatWellApp() {
+fun EatWellApp(recipes: List<Recipe> = Datasource().loadRecipes()) {
     Scaffold(
         topBar = { EatWellTopBar() },
         modifier = Modifier.fillMaxSize()
     ) { innerPadding ->
-        // TODO: use LazyColumn
-        RecipeCard(
-            Recipe(
-                image = R.drawable.recipe1_image,
-                title = R.string.recipe1_title,
-                description = R.string.recipe1_description,
-                externalLink = R.string.recipe1_link
-            ),
-            modifier = Modifier.padding(innerPadding)
-        )
+        LazyColumn(
+            contentPadding = innerPadding,
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.space_large)),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    start = dimensionResource(R.dimen.space_medium),
+                    end = dimensionResource(R.dimen.space_medium)
+                )
+        ) {
+            itemsIndexed(recipes) { index, recipe ->
+                Column(verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.space_small))) {
+                    Text(
+                        text = "Day ${index + 1}",
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.secondary
+                    )
+                    RecipeCard(
+                        recipe = recipe,
+                        modifier = Modifier
+                            .widthIn(max = 500.dp)
+                            .fillMaxWidth()
+                    )
+                }
+            }
+        }
     }
-
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun EatWellTopBar(modifier: Modifier = Modifier) {
-    CenterAlignedTopAppBar(
-        title = {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                // TODO: add logo
-//                Image(
-//                    modifier = Modifier
-//                        .size(dimensionResource(id = R.dimen.image_size))
-//                        .padding(dimensionResource(id = R.dimen.padding_small)),
-//                    painter = painterResource(R.drawable.ic_woof_logo),
-//                    contentDescription = null
-//                )
+    Column(modifier = modifier) {
+        CenterAlignedTopAppBar(
+            title = {
                 Text(
                     text = stringResource(R.string.app_name),
                     style = MaterialTheme.typography.displayLarge
                 )
             }
-        },
-        modifier = modifier,
-    )
+        )
+        HorizontalDivider(
+            thickness = 1.dp,
+            color = MaterialTheme.colorScheme.secondary,
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.space_small))
+        )
+    }
 }
 
 @Composable
@@ -139,7 +156,7 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(dimensionResource(R.dimen.padding_medium))
+                    .padding(dimensionResource(R.dimen.space_medium))
             ) {
                 Text(
                     text = stringResource(recipe.title),
@@ -156,9 +173,9 @@ fun RecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
                     text = stringResource(recipe.description),
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier.padding(
-                        start = dimensionResource(R.dimen.padding_medium),
-                        end = dimensionResource(R.dimen.padding_medium),
-                        bottom = dimensionResource(R.dimen.padding_large)
+                        start = dimensionResource(R.dimen.space_medium),
+                        end = dimensionResource(R.dimen.space_medium),
+                        bottom = dimensionResource(R.dimen.space_large)
                     )
                 )
             }
